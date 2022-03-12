@@ -28,8 +28,11 @@ jobs:
       - name: Install bash automated testing system
         run: npm install -g bats
       - run: bats -v 
+      # Need to call
+      # $ git update-index --chmod=+x ./.github/scripts/myscript.sh
+      # to make it executable. Otherwise permission denied error.
       - name: Call custom ci script
-        run: ./.github/scripts/some_ci_script.shasdas
+        run: ./.github/scripts/some_ci_script.sh
         shell: bash
         env:
           SOME_VAR: some_secret
