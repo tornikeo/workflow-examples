@@ -29,7 +29,7 @@ jobs:
         run: npm install -g bats
       - run: bats -v 
       - name: Call custom ci script
-        run: ./.github/scripts/some_ci_script.sh
+        run: ./.github/scripts/some_ci_script.shasdas
         shell: bash
         env:
           SOME_VAR: some_secret
