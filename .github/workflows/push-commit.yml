@@ -1,4 +1,4 @@
-name: Push commit
+name: Try a new approach
 on: push
 jobs:
   report:
