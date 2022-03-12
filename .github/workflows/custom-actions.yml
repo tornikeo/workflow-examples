@@ -25,5 +25,10 @@ jobs:
           cache: # optional
           # Used to specify the path to a dependency file: package-lock.json, yarn.lock, etc. Supports wildcards or a list of file names for caching multiple dependencies.
           cache-dependency-path: # optional
-      - run: npm install -g bats
+      - name: Install bash automated testing system
+        run: npm install -g bats
       - run: bats -v 
+      - name: Call custom ci script
+        run: ./.github/scripts/some_ci_script.sh
+        env:
+          SOME_VAR: some_secret
