@@ -30,5 +30,6 @@ jobs:
       - run: bats -v 
       - name: Call custom ci script
         run: ./.github/scripts/some_ci_script.sh
+        shell: bash
         env:
           SOME_VAR: some_secret
