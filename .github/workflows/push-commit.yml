@@ -1,4 +1,4 @@
-name: Try a new approach
+name: No Nut November
 on: push
 jobs:
   report:
