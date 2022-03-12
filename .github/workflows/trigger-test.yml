@@ -1,4 +1,4 @@
-name: learn-github-actions
+name: trigger-test
 on:
   push:
     branches:
